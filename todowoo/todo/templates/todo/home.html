@@ -1,0 +1,34 @@
+{% extends 'todo/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>ToDo page</title>
+  </head>
+  <body>
+    {% block content %}
+    <div class="container text-center">
+      <h1 class="alert alert-info">Home Page, hi there</h1>
+      <h2 class="alert alert-secondary rounded-5">
+        On this site you can create your own to-do list, when you complete a
+        task, you can classify it as completed or simply delete it, you can see
+        the lists of your tasks in the header, in addition, you can change any
+        information, register and log in to your account, I hope you enjoy it.
+        Code for this web-app on my github: https://github.com/NEZuko1337
+      </h2>
+    </div>
+  </body>
+  {% endblock %}
+</html>
